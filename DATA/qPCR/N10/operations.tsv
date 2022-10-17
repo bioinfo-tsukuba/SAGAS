@@ -1,0 +1,161 @@
+Job_ID	Operation_ID	Compatible_machine	Processing_time	Note
+1	1	5	1	Transport reagents to Tecan (type 1)
+1	2	5	1	Transport samples to Tecan (type 2)
+1	3	1	5	Prepare master mix
+1	4	2	15	Process samples
+1	5	5	1	Tranport sample plate to Plate centrifuge
+1	6	4	1	Centrifuge sample plate
+1	7	5	1	Tranport sample plate to Tecan (type 3)
+1	8	5	1	Tranport master mix to Plate centrifuge
+1	9	4	1	Centrifuge master mix
+1	10	5	1	Tranport master mix to Tecan (type 3)
+1	11	3	5	Add master mix to samples
+1	12	5	1	Transfer samples to centrifuge
+1	13	4	1	Centrifuge samples
+1	14	5	1	Transfer samples to qRT-PCR inst.
+1	15	6	40	Execute qRT-PCR
+1	16	5	1	Discard samples
+2	1	5	1	Transport reagents to Tecan (type 1)
+2	2	5	1	Transport samples to Tecan (type 2)
+2	3	1	5	Prepare master mix
+2	4	2	15	Process samples
+2	5	5	1	Tranport sample plate to Plate centrifuge
+2	6	4	1	Centrifuge sample plate
+2	7	5	1	Tranport sample plate to Tecan (type 3)
+2	8	5	1	Tranport master mix to Plate centrifuge
+2	9	4	1	Centrifuge master mix
+2	10	5	1	Tranport master mix to Tecan (type 3)
+2	11	3	5	Add master mix to samples
+2	12	5	1	Transfer samples to centrifuge
+2	13	4	1	Centrifuge samples
+2	14	5	1	Transfer samples to qRT-PCR inst.
+2	15	6	40	Execute qRT-PCR
+2	16	5	1	Discard samples
+3	1	5	1	Transport reagents to Tecan (type 1)
+3	2	5	1	Transport samples to Tecan (type 2)
+3	3	1	5	Prepare master mix
+3	4	2	15	Process samples
+3	5	5	1	Tranport sample plate to Plate centrifuge
+3	6	4	1	Centrifuge sample plate
+3	7	5	1	Tranport sample plate to Tecan (type 3)
+3	8	5	1	Tranport master mix to Plate centrifuge
+3	9	4	1	Centrifuge master mix
+3	10	5	1	Tranport master mix to Tecan (type 3)
+3	11	3	5	Add master mix to samples
+3	12	5	1	Transfer samples to centrifuge
+3	13	4	1	Centrifuge samples
+3	14	5	1	Transfer samples to qRT-PCR inst.
+3	15	6	40	Execute qRT-PCR
+3	16	5	1	Discard samples
+4	1	5	1	Transport reagents to Tecan (type 1)
+4	2	5	1	Transport samples to Tecan (type 2)
+4	3	1	5	Prepare master mix
+4	4	2	15	Process samples
+4	5	5	1	Tranport sample plate to Plate centrifuge
+4	6	4	1	Centrifuge sample plate
+4	7	5	1	Tranport sample plate to Tecan (type 3)
+4	8	5	1	Tranport master mix to Plate centrifuge
+4	9	4	1	Centrifuge master mix
+4	10	5	1	Tranport master mix to Tecan (type 3)
+4	11	3	5	Add master mix to samples
+4	12	5	1	Transfer samples to centrifuge
+4	13	4	1	Centrifuge samples
+4	14	5	1	Transfer samples to qRT-PCR inst.
+4	15	6	40	Execute qRT-PCR
+4	16	5	1	Discard samples
+5	1	5	1	Transport reagents to Tecan (type 1)
+5	2	5	1	Transport samples to Tecan (type 2)
+5	3	1	5	Prepare master mix
+5	4	2	15	Process samples
+5	5	5	1	Tranport sample plate to Plate centrifuge
+5	6	4	1	Centrifuge sample plate
+5	7	5	1	Tranport sample plate to Tecan (type 3)
+5	8	5	1	Tranport master mix to Plate centrifuge
+5	9	4	1	Centrifuge master mix
+5	10	5	1	Tranport master mix to Tecan (type 3)
+5	11	3	5	Add master mix to samples
+5	12	5	1	Transfer samples to centrifuge
+5	13	4	1	Centrifuge samples
+5	14	5	1	Transfer samples to qRT-PCR inst.
+5	15	6	40	Execute qRT-PCR
+5	16	5	1	Discard samples
+6	1	5	1	Transport reagents to Tecan (type 1)
+6	2	5	1	Transport samples to Tecan (type 2)
+6	3	1	5	Prepare master mix
+6	4	2	15	Process samples
+6	5	5	1	Tranport sample plate to Plate centrifuge
+6	6	4	1	Centrifuge sample plate
+6	7	5	1	Tranport sample plate to Tecan (type 3)
+6	8	5	1	Tranport master mix to Plate centrifuge
+6	9	4	1	Centrifuge master mix
+6	10	5	1	Tranport master mix to Tecan (type 3)
+6	11	3	5	Add master mix to samples
+6	12	5	1	Transfer samples to centrifuge
+6	13	4	1	Centrifuge samples
+6	14	5	1	Transfer samples to qRT-PCR inst.
+6	15	6	40	Execute qRT-PCR
+6	16	5	1	Discard samples
+7	1	5	1	Transport reagents to Tecan (type 1)
+7	2	5	1	Transport samples to Tecan (type 2)
+7	3	1	5	Prepare master mix
+7	4	2	15	Process samples
+7	5	5	1	Tranport sample plate to Plate centrifuge
+7	6	4	1	Centrifuge sample plate
+7	7	5	1	Tranport sample plate to Tecan (type 3)
+7	8	5	1	Tranport master mix to Plate centrifuge
+7	9	4	1	Centrifuge master mix
+7	10	5	1	Tranport master mix to Tecan (type 3)
+7	11	3	5	Add master mix to samples
+7	12	5	1	Transfer samples to centrifuge
+7	13	4	1	Centrifuge samples
+7	14	5	1	Transfer samples to qRT-PCR inst.
+7	15	6	40	Execute qRT-PCR
+7	16	5	1	Discard samples
+8	1	5	1	Transport reagents to Tecan (type 1)
+8	2	5	1	Transport samples to Tecan (type 2)
+8	3	1	5	Prepare master mix
+8	4	2	15	Process samples
+8	5	5	1	Tranport sample plate to Plate centrifuge
+8	6	4	1	Centrifuge sample plate
+8	7	5	1	Tranport sample plate to Tecan (type 3)
+8	8	5	1	Tranport master mix to Plate centrifuge
+8	9	4	1	Centrifuge master mix
+8	10	5	1	Tranport master mix to Tecan (type 3)
+8	11	3	5	Add master mix to samples
+8	12	5	1	Transfer samples to centrifuge
+8	13	4	1	Centrifuge samples
+8	14	5	1	Transfer samples to qRT-PCR inst.
+8	15	6	40	Execute qRT-PCR
+8	16	5	1	Discard samples
+9	1	5	1	Transport reagents to Tecan (type 1)
+9	2	5	1	Transport samples to Tecan (type 2)
+9	3	1	5	Prepare master mix
+9	4	2	15	Process samples
+9	5	5	1	Tranport sample plate to Plate centrifuge
+9	6	4	1	Centrifuge sample plate
+9	7	5	1	Tranport sample plate to Tecan (type 3)
+9	8	5	1	Tranport master mix to Plate centrifuge
+9	9	4	1	Centrifuge master mix
+9	10	5	1	Tranport master mix to Tecan (type 3)
+9	11	3	5	Add master mix to samples
+9	12	5	1	Transfer samples to centrifuge
+9	13	4	1	Centrifuge samples
+9	14	5	1	Transfer samples to qRT-PCR inst.
+9	15	6	40	Execute qRT-PCR
+9	16	5	1	Discard samples
+10	1	5	1	Transport reagents to Tecan (type 1)
+10	2	5	1	Transport samples to Tecan (type 2)
+10	3	1	5	Prepare master mix
+10	4	2	15	Process samples
+10	5	5	1	Tranport sample plate to Plate centrifuge
+10	6	4	1	Centrifuge sample plate
+10	7	5	1	Tranport sample plate to Tecan (type 3)
+10	8	5	1	Tranport master mix to Plate centrifuge
+10	9	4	1	Centrifuge master mix
+10	10	5	1	Tranport master mix to Tecan (type 3)
+10	11	3	5	Add master mix to samples
+10	12	5	1	Transfer samples to centrifuge
+10	13	4	1	Centrifuge samples
+10	14	5	1	Transfer samples to qRT-PCR inst.
+10	15	6	40	Execute qRT-PCR
+10	16	5	1	Discard samples

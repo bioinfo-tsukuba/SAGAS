@@ -1,0 +1,221 @@
+Job_ID	Operation (O)	Compatible machine (C)	Processing_time	Memo
+1	1	2	5	__0_______________
+1	2	1	106.5	__1_35. ____RNA_____
+1	3	2	5	___________
+1	4	3	75	RNA-seq_________36_72
+1	5	2	5	____PCR__
+1	6	4	75	PCR___73
+1	7	2	5	PCR______
+1	8	3	3	______74_76
+1	9	2	5	____PCR__
+1	10	4	30	PCR___77
+1	11	2	5	PCR______
+1	12	3	87	______78_98
+1	13	2	5	____PCR__
+1	14	4	30	PCR___99
+1	15	2	5	PCR______
+1	16	3	57.5	______100_122
+1	17	2	5	____PCR__
+1	18	4	35	PCR___123
+1	19	2	5	PCR______
+1	20	3	4	______124_127
+1	21	2	5	____PCR__
+1	22	4	10	PCR___128
+1	23	2	5	PCR______
+1	24	3	33.5	______129_166
+1	25	2	5	____PCR__
+1	26	4	45	PCR___167
+1	27	2	5	PCR______
+1	28	3	45	______168_185
+2	1	2	5	__0_______________
+2	2	1	106.5	__1_35. ____RNA_____
+2	3	2	5	___________
+2	4	3	75	RNA-seq_________36_72
+2	5	2	5	____PCR__
+2	6	4	75	PCR___73
+2	7	2	5	PCR______
+2	8	3	3	______74_76
+2	9	2	5	____PCR__
+2	10	4	30	PCR___77
+2	11	2	5	PCR______
+2	12	3	87	______78_98
+2	13	2	5	____PCR__
+2	14	4	30	PCR___99
+2	15	2	5	PCR______
+2	16	3	57.5	______100_122
+2	17	2	5	____PCR__
+2	18	4	35	PCR___123
+2	19	2	5	PCR______
+2	20	3	4	______124_127
+2	21	2	5	____PCR__
+2	22	4	10	PCR___128
+2	23	2	5	PCR______
+2	24	3	33.5	______129_166
+2	25	2	5	____PCR__
+2	26	4	45	PCR___167
+2	27	2	5	PCR______
+2	28	3	45	______168_185
+3	1	2	5	__0_______________
+3	2	1	106.5	__1_35. ____RNA_____
+3	3	2	5	___________
+3	4	3	75	RNA-seq_________36_72
+3	5	2	5	____PCR__
+3	6	4	75	PCR___73
+3	7	2	5	PCR______
+3	8	3	3	______74_76
+3	9	2	5	____PCR__
+3	10	4	30	PCR___77
+3	11	2	5	PCR______
+3	12	3	87	______78_98
+3	13	2	5	____PCR__
+3	14	4	30	PCR___99
+3	15	2	5	PCR______
+3	16	3	57.5	______100_122
+3	17	2	5	____PCR__
+3	18	4	35	PCR___123
+3	19	2	5	PCR______
+3	20	3	4	______124_127
+3	21	2	5	____PCR__
+3	22	4	10	PCR___128
+3	23	2	5	PCR______
+3	24	3	33.5	______129_166
+3	25	2	5	____PCR__
+3	26	4	45	PCR___167
+3	27	2	5	PCR______
+3	28	3	45	______168_185
+4	1	2	1	Transport reagents to Tecan (type 1)
+4	2	2	1	Transport samples to Tecan (type 2)
+4	3	5	5	Prepare master mix
+4	4	6	15	Process samples
+4	5	2	1	Tranport sample plate to Plate centrifuge
+4	6	8	1	Centrifuge sample plate
+4	7	2	1	Tranport sample plate to Tecan (type 3)
+4	8	2	1	Tranport master mix to Plate centrifuge
+4	9	8	1	Centrifuge master mix
+4	10	2	1	Tranport master mix to Tecan (type 3)
+4	11	7	5	Add master mix to samples
+4	12	2	1	Transfer samples to centrifuge
+4	13	8	1	Centrifuge samples
+4	14	2	1	Transfer samples to qRT-PCR inst.
+4	15	9	40	Execute qRT-PCR
+4	16	2	1	Discard samples
+5	1	2	1	Transport reagents to Tecan (type 1)
+5	2	2	1	Transport samples to Tecan (type 2)
+5	3	5	5	Prepare master mix
+5	4	6	15	Process samples
+5	5	2	1	Tranport sample plate to Plate centrifuge
+5	6	8	1	Centrifuge sample plate
+5	7	2	1	Tranport sample plate to Tecan (type 3)
+5	8	2	1	Tranport master mix to Plate centrifuge
+5	9	8	1	Centrifuge master mix
+5	10	2	1	Tranport master mix to Tecan (type 3)
+5	11	7	5	Add master mix to samples
+5	12	2	1	Transfer samples to centrifuge
+5	13	8	1	Centrifuge samples
+5	14	2	1	Transfer samples to qRT-PCR inst.
+5	15	9	40	Execute qRT-PCR
+5	16	2	1	Discard samples
+6	1	2	1	Transport reagents to Tecan (type 1)
+6	2	2	1	Transport samples to Tecan (type 2)
+6	3	5	5	Prepare master mix
+6	4	6	15	Process samples
+6	5	2	1	Tranport sample plate to Plate centrifuge
+6	6	8	1	Centrifuge sample plate
+6	7	2	1	Tranport sample plate to Tecan (type 3)
+6	8	2	1	Tranport master mix to Plate centrifuge
+6	9	8	1	Centrifuge master mix
+6	10	2	1	Tranport master mix to Tecan (type 3)
+6	11	7	5	Add master mix to samples
+6	12	2	1	Transfer samples to centrifuge
+6	13	8	1	Centrifuge samples
+6	14	2	1	Transfer samples to qRT-PCR inst.
+6	15	9	40	Execute qRT-PCR
+6	16	2	1	Discard samples
+7	1	2	5	__0_______________
+7	2	1	106.5	__1_35. ____RNA_____
+7	3	2	5	___________
+7	4	3	75	RNA-seq_________36_72
+7	5	2	5	____PCR__
+7	6	4	75	PCR___73
+7	7	2	5	PCR______
+7	8	3	3	______74_76
+7	9	2	5	____PCR__
+7	10	4	30	PCR___77
+7	11	2	5	PCR______
+7	12	3	87	______78_98
+7	13	2	5	____PCR__
+7	14	4	30	PCR___99
+7	15	2	5	PCR______
+7	16	3	57.5	______100_122
+7	17	2	5	____PCR__
+7	18	4	35	PCR___123
+7	19	2	5	PCR______
+7	20	3	4	______124_127
+7	21	2	5	____PCR__
+7	22	4	10	PCR___128
+7	23	2	5	PCR______
+7	24	3	33.5	______129_166
+7	25	2	5	____PCR__
+7	26	4	45	PCR___167
+7	27	2	5	PCR______
+7	28	3	45	______168_185
+8	1	2	5	__0_______________
+8	2	1	106.5	__1_35. ____RNA_____
+8	3	2	5	___________
+8	4	3	75	RNA-seq_________36_72
+8	5	2	5	____PCR__
+8	6	4	75	PCR___73
+8	7	2	5	PCR______
+8	8	3	3	______74_76
+8	9	2	5	____PCR__
+8	10	4	30	PCR___77
+8	11	2	5	PCR______
+8	12	3	87	______78_98
+8	13	2	5	____PCR__
+8	14	4	30	PCR___99
+8	15	2	5	PCR______
+8	16	3	57.5	______100_122
+8	17	2	5	____PCR__
+8	18	4	35	PCR___123
+8	19	2	5	PCR______
+8	20	3	4	______124_127
+8	21	2	5	____PCR__
+8	22	4	10	PCR___128
+8	23	2	5	PCR______
+8	24	3	33.5	______129_166
+8	25	2	5	____PCR__
+8	26	4	45	PCR___167
+8	27	2	5	PCR______
+8	28	3	45	______168_185
+9	1	2	1	Transport reagents to Tecan (type 1)
+9	2	2	1	Transport samples to Tecan (type 2)
+9	3	5	5	Prepare master mix
+9	4	6	15	Process samples
+9	5	2	1	Tranport sample plate to Plate centrifuge
+9	6	8	1	Centrifuge sample plate
+9	7	2	1	Tranport sample plate to Tecan (type 3)
+9	8	2	1	Tranport master mix to Plate centrifuge
+9	9	8	1	Centrifuge master mix
+9	10	2	1	Tranport master mix to Tecan (type 3)
+9	11	7	5	Add master mix to samples
+9	12	2	1	Transfer samples to centrifuge
+9	13	8	1	Centrifuge samples
+9	14	2	1	Transfer samples to qRT-PCR inst.
+9	15	9	40	Execute qRT-PCR
+9	16	2	1	Discard samples
+10	1	2	1	Transport reagents to Tecan (type 1)
+10	2	2	1	Transport samples to Tecan (type 2)
+10	3	5	5	Prepare master mix
+10	4	6	15	Process samples
+10	5	2	1	Tranport sample plate to Plate centrifuge
+10	6	8	1	Centrifuge sample plate
+10	7	2	1	Tranport sample plate to Tecan (type 3)
+10	8	2	1	Tranport master mix to Plate centrifuge
+10	9	8	1	Centrifuge master mix
+10	10	2	1	Tranport master mix to Tecan (type 3)
+10	11	7	5	Add master mix to samples
+10	12	2	1	Transfer samples to centrifuge
+10	13	8	1	Centrifuge samples
+10	14	2	1	Transfer samples to qRT-PCR inst.
+10	15	9	40	Execute qRT-PCR
+10	16	2	1	Discard samples
