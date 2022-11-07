@@ -22,7 +22,7 @@ We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(GCC 9.2.1, cl
 
 ## How to run
 
-### Google colaboratory
+### Google colaboratory (Easy, recommend)
 
 1. Access this [page](https://github.com/bioinfo-tsukuba/SAGAS/blob/main/SAGASforGithub.ipynb)
 2. Click this mark ![image](https://user-images.githubusercontent.com/85389241/197720096-68863e1b-a46d-4df3-98af-5ebf1a506812.png)
@@ -49,7 +49,10 @@ We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(GCC 9.2.1, cl
 </details>
 
 
-1. Make config files
+1. Make setting files(dependency.tsv, machines.tsv, operations.tsv, tcmb.tsv) in a directory (see the sample files).//フォーマットを作ってあげるといいかも
+1. Make a config file (see the sample file).//フォーマットを作ってあげるといいかも
+
+
 
 
 
