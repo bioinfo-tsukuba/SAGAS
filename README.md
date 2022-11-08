@@ -5,19 +5,11 @@ SAGAS.cpp
 ### C++ version
 We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(GCC 9.2.1, clang-1316.0.21.2.5) successfully compiled SAGAS.cpp.
 
-### Header files
-  
-```
-#include <string.h>
-#include <fstream>
-#include <iostream>
-#include <algorithm>
-#include <map>
-#include <set>
-#include <iterator>
-#include <random> 
-#include <sys/time.h>
-#include <iomanip>
+
+## How to build
+
+```zsh
+g++ SAGAS.cpp -o SAGAS_compiled
 ```
 
 ## How to run
@@ -51,6 +43,11 @@ We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(GCC 9.2.1, cl
 
 1. Make setting files(dependency.tsv, machines.tsv, operations.tsv, tcmb.tsv) in a directory (see the sample files).//フォーマットを作ってあげるといいかも
 1. Make a config file (see the sample file).//フォーマットを作ってあげるといいかも
+
+
+```zsh
+SAGAS_compiled -log Userbane "memo" -conf config.tsv [-penalty {penalty}] [-gl {gl} {failedskip}]'//後程確認
+```
 
 
 
