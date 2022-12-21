@@ -37,9 +37,12 @@ g++ SAGAS.cpp -o SAGAS_compiled
         3. `cd` into the directory.
 
 
-
-1. Make setting files(dependency.tsv, machines.tsv, operations.tsv, tcmb.tsv) in a directory (see the sample files).//フォーマットを作ってあげるといいかも
-1. Make a config file (see the sample file).//フォーマットを作ってあげるといいかも
+2. Run example cases.
+    ```sh
+     $ ./SAGAS_compiled -log Sample "This is sample case" -conf ./sample/configs/Gu2016x1_sample.tsv
+    ```
+3. Make setting files(dependency.tsv, machines.tsv, operations.tsv, tcmb.tsv) in a directory (see the sample files).//フォーマットを作ってあげるといいかも
+4. Make a config file (see the sample file).//フォーマットを作ってあげるといいかも
 
 
 ```zsh
