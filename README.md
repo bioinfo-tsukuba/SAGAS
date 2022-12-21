@@ -32,13 +32,10 @@ g++ SAGAS.cpp -o SAGAS_compiled
         /path/to/SAGAS
         ```
     1. Alternatively,
-<details><summary>ここ書き換える</summary>
-
-        1. Download [a zip archive](https://github.com/labauto/SLab.jl/archive/main.zip).
-        2. Extract the archive (a directory named `SLab.jl-main` will be created).
+        1. Download [a zip archive](https://github.com/bioinfo-tsukuba/SAGAS/archive/main.zip).
+        2. Extract the archive (a directory named `SAGAS-main` will be created).
         3. `cd` into the directory.
 
-</details>
 
 
 1. Make setting files(dependency.tsv, machines.tsv, operations.tsv, tcmb.tsv) in a directory (see the sample files).//フォーマットを作ってあげるといいかも
