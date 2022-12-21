@@ -6,7 +6,7 @@ ADD_machine4	0
 ID	RNAseqx5_sample
 Annealing_time_(msec)	60000
 Loops	5
-Output_directory	./sample/Results
+Output_directory	./sample/DATA/RNAseq
 Source_directory	./sample/DATA/RNAseq/N5
 Adjust_strictly	TRUE
 Align_start_time	TRUE
