@@ -1,36 +1,17 @@
-
-
-
 #include <string.h>
 #include <fstream> //読み込み
 #include <iostream> // cout, endl, cin
-#include <string> // string, to_string, stoi：＠；ｐ」・；：；：＠ｐ」・：＠；ｐ」・；：；：＠ｐ」・
-#include <vector> // vector
 #include <algorithm> // min, max, swap, sort, reverse, lower_bound, upper_bound
-#include <utility> // pair, make_pair
-#include <tuple> // tuple, make_tuple
-#include <cstdint> // int64_t, int*_t
-#include <cstdio> // printf
 #include <map> // map
-#include <queue> // queue, priority_queue
 #include <set> // set
-#include <numeric>
 #include <iterator>
 #include <random> 
-#include <stack> // stack
-#include <deque> // deque
-#include <unordered_map> // unordered_map
-#include <unordered_set> // unordered_set
-#include <bitset> // bitset
-#include <cctype> // isupper, islower, isdigit, toupper, tolower
 
 
-      //時間取得
-      #include <chrono>
-      #include <sys/time.h>
-      #include <ctime>
-      #include <iomanip>
-      using namespace std;
+//時間取得
+#include <sys/time.h>
+#include <iomanip>
+using namespace std;
 
 #define lli long long int
 #define rep(i, n) ;for (int i = 0;i < (int)(n);i++)
@@ -59,7 +40,7 @@ int randxor()
   t=(x^(x<<11));x=y;y=z;z=w; return( (w=(w^(w>>19))^(t^(t>>8)))% NMAX);
 }
 
-static  int schedule_limit= 108000;
+int schedule_limit= 10800000;
 
 
 static lli score = 0;
@@ -647,15 +628,33 @@ void Greedy(
                       vector<vector<tuple<int, int, int, int>>> &Dep_and_Order,  
                       vector<vector<int>> &C, 
                       vector<int> &MachineType_num,
-                      bool &Force_finish
+                      bool &Force_finish,
+                      int greedy_time_limit,
+                      time_t greedy_start
 ){
+  struct timeval time_now{};
+  gettimeofday(&time_now, nullptr);
+  time_t greedy_now = (time_now.tv_sec * 1000) + (time_now.tv_usec / 1000);
     int j_g = 0;
   int o_g = 0;
+  int loopcount = 0;
       {
     Greedy_nextloop:
+    loopcount ++;
+
+      if(greedy_time_limit != -1 && loopcount %100 == 1){
+  gettimeofday(&time_now, nullptr);
+  time_t greedy_now = (time_now.tv_sec * 1000) + (time_now.tv_usec / 1000);
+  if(greedy_now - greedy_start > greedy_time_limit){
+        Force_finish = true;
+        printf("Greedy time over.\nLimit is %d but passed time is %d (ms).\n", greedy_time_limit, (int)(greedy_now - greedy_start));
+      return ;
+  }
+
+      }
 
     if(Force_finish){
-
+      return ;
     }//不可能な場合
     //[j_g][o_g]に関してのサーチを行う
     //制約を確認する。Strict_list_for_greedy[j_g][o_g][i]=依存先O_dep, O_depに関して守らなければならない制約の下限, O_depに関して守らなければならない制約の上限
@@ -762,7 +761,7 @@ void Greedy(
           if (time2 ==  time2_C){
             o_g = O_dep;
             goto Updating_greedy_node;
-            //Update_node_for_greedy(j_g, O_dep,  Deped_list, Depping_list, Strict_list_for_greedy,   greedy_list,  N,  tau, Dep_and_Order_num,   Dep_and_Order,   C,  MachineType_num, Force_finish);
+            //Update_node_for_greedy(j_g, O_dep,  Deped_list, Depping_list, Strict_list_for_greedy,   greedy_list,  N,  tau, Dep_and_Order_num,   Dep_and_Order,   C,  MachineType_num, Force_finish, greedy_time_limit, greedy_start);
 
             //違反の原因となる依存先に飛ぶ
             //Greedy_searching(j_g, o,  Deped_list, Depping_list, Strict_list_for_greedy,   greedy_list,  N,  tau, Dep_and_Order_num,   Dep_and_Order,   C,  MachineType_num, Force_finish);
@@ -900,6 +899,7 @@ giko %= 50;
 
 int main(int argc, char *argv[]){
     map<string, string> command_line;
+    int greedy_time_limit= -1;
 
 
     int i=0;
@@ -910,7 +910,23 @@ int main(int argc, char *argv[]){
           command_line[arg] = "";
                       }
       
+      else if(arg == "-penalty"){
+        i++;
+
+      arg = argv[i];
+          schedule_limit = stoi(arg);
+                      }
+
+      else if(arg == "-gl"){
+        i++;
+      arg = argv[i];
+      greedy_time_limit = stoi(arg);
+                      }
+      
       else if(arg == "-m"){
+          command_line[arg] = "";
+                      }
+      else if(arg == "-fs"){
           command_line[arg] = "";
                       }
       else if(arg == "-log"){
@@ -927,7 +943,7 @@ int main(int argc, char *argv[]){
           string conf = argv[i];
           command_line[arg] = conf;
                       }
-      else if(arg ==  "-help!"){//もじれつのひかく
+      else if(strcmp(argv[i], "-help!") == 0){//もじれつのひかく
           string help = "Help! I need somebody\n"
   "Help! Not just anybody\n"
   "Help! You know I need someone Help!\n"
@@ -938,9 +954,7 @@ int main(int argc, char *argv[]){
       cout << endl;
 
       }
-      else if(arg ==  "-giko"){
-
-          command_line[arg] = "Giko";
+      else if(strcmp(argv[i], "-giko") == 0){
           Giko_comment("Giko mode!" );
 
       }
@@ -986,6 +1000,7 @@ int main(int argc, char *argv[]){
   int Loop_end_point = 0;
   bool End_the_middle = true;
   int last_time_start = 0;
+  time_t greedy_start = 0;
   bool From_greedy = false;
   bool With_greedy = false;
   bool Align_start = false;
@@ -1699,7 +1714,11 @@ cout << from << "\t←\t" << to <<"\t"<<time1 << " ~ " << time2 << endl;
       //Greedy
       bool Force_finish = false;
 
-      Greedy(J,  Deped_list, Depping_list, Strict_list_for_greedy,   greedy_list,  N,  tau, Dep_and_Order_num,   Dep_and_Order,   C,  MachineType_num, Force_finish);
+
+      gettimeofday(&time_now, nullptr);
+      greedy_start = (time_now.tv_sec * 1000) + (time_now.tv_usec / 1000);
+
+      Greedy(J,  Deped_list, Depping_list, Strict_list_for_greedy,   greedy_list,  N,  tau, Dep_and_Order_num,   Dep_and_Order,   C,  MachineType_num, Force_finish, greedy_time_limit, greedy_start);
 
 
 
@@ -1914,6 +1933,9 @@ cout << from << "\t←\t" << to <<"\t"<<time1 << " ~ " << time2 << endl;
 
       last_time_start = 0;
 if(SA_naive) goto SA_naive_skip;
+if(command_line.count("-fs") > 0 &&best_score >= schedule_limit){
+  goto SA_naive_skip;
+}
 
 
     if(debug_mode) cout << "Last_1" << endl;
@@ -2293,9 +2315,13 @@ if(Strict_adjustment){
 
       if(With_greedy){
           adopt_greedy = false;
+          
+
+      gettimeofday(&time_now, nullptr);
+      greedy_start = (time_now.tv_sec * 1000) + (time_now.tv_usec / 1000);
 
       //Greedy
-      Greedy(J, Deped_list, Depping_list, Strict_list_for_greedy,   greedy_list,  N,  tau, Dep_and_Order_num,   Dep_and_Order,   C,  MachineType_num, Force_finish);
+      Greedy(J, Deped_list, Depping_list, Strict_list_for_greedy,   greedy_list,  N,  tau, Dep_and_Order_num,   Dep_and_Order,   C,  MachineType_num, Force_finish, greedy_time_limit, greedy_start);
     if(debug_mode) cout << "Greedy done!" << endl;
       lli greedy_score = getScore(N, greedy_list, tau, Dep_and_Order_num, Dep_and_Order, C, MachineType_num);
 
@@ -2578,16 +2604,4 @@ Result_statas = "SA";
 
   } 
   return 0;
-  /*
-  n n y
-  qPCR_RNAseq_N5_N5_3min_SG_config_search_minimum
-  180000
-  0 0 0 0
-  5
-  n n n n y y y y y Yuya QUIT
-  /content/drive/MyDrive/SALAS/RESULTS/lab_config_search/SA_greedy/qPCR_RNAseq/N3_N3/rawresults/3min_con1/qPCR_RNAseq_N3_N3_3min_SG_config_search_config_content.tsv
-  
-
-
-  */
 }
