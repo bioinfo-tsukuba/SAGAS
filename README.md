@@ -5,13 +5,6 @@ SAGAS.cpp
 ### C++ version
 We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(GCC 9.2.1, clang-1316.0.21.2.5) successfully compiled SAGAS.cpp.
 
-
-## How to build
-
-```zsh
-g++ SAGAS.cpp -o SAGAS_compiled
-```
-
 ## How to run
 
 ### Google colaboratory (Easy, recommend)
@@ -25,7 +18,7 @@ g++ SAGAS.cpp -o SAGAS_compiled
 
 1. Get the source code.
     1. If you are familiar with `git`, simply clone this repository and move into the directory.
-        ```sh
+        ```zsh
         $ git clone https://github.com/bioinfo-tsukuba/SAGAS.git
         $ cd SAGAS
         $ pwd
@@ -35,10 +28,12 @@ g++ SAGAS.cpp -o SAGAS_compiled
         1. Download [a zip archive](https://github.com/bioinfo-tsukuba/SAGAS/archive/main.zip).
         2. Extract the archive (a directory named `SAGAS-main` will be created).
         3. `cd` into the directory.
-
-
-2. Run example cases.
-    ```sh
+2. Compile SAGAS.cpp
+    ```zsh
+    g++ SAGAS.cpp -o SAGAS_compiled
+    ```
+4. Run example cases.
+    ```zsh
      $ ./SAGAS_compiled -log Sample "This is sample case" -conf ./sample/configs/Gu2016x1_sample.tsv
     ```
 3. Make setting files(dependency.tsv, machines.tsv, operations.tsv, tcmb.tsv) in a directory (see the sample files).//フォーマットを作ってあげるといいかも
