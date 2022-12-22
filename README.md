@@ -36,6 +36,14 @@ We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(GCC 9.2.1, cl
     ```zsh
      $ ./SAGAS_compiled -log Sample "This is sample case" -conf ./sample/configs/Gu2016x1_sample.tsv
     ```
+    
+    <details><summary>Short explanation</summary>
+    
+    ```zsh
+    SAGAS_compiled -log Userbane "memo" -conf config.tsv [-penalty {penalty}] [-gl {gl} {failedskip}]
+    ```
+
+    </details>
 5. Make setting files(dependency.tsv, machines.tsv, operations.tsv, tcmb.tsv) in a directory. Blank templates are in the "Blank templates" directory.
     <details><summary>Detail explanation for making setting files</summary>
     
@@ -80,11 +88,6 @@ We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(GCC 9.2.1, cl
     </details>
     
 6. Make a config file (you can use the interactive config maker).//フォーマットを作ってあげるといいかも
-
-
-```zsh
-SAGAS_compiled -log Userbane "memo" -conf config.tsv [-penalty {penalty}] [-gl {gl} {failedskip}]'//後程確認
-```
 
 
 
