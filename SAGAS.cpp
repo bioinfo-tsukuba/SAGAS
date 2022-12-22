@@ -8,10 +8,14 @@
 #include <random> 
 #include <vector> //vector
 #include <tuple> // tuple, make_tuple
+#include <utility> // pair, make_pair
+#include <cstdio> // printf
 
 
 //時間取得
+#include <chrono>
 #include <sys/time.h>
+#include <ctime>
 #include <iomanip>
 using namespace std;
 
