@@ -3,7 +3,7 @@ SAGAS.cpp
 
 ## Requirements
 ### C++ version
-We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(GCC 9.2.1, clang-1316.0.21.2.5) successfully compiled SAGAS.cpp.
+We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(g++ (Homebrew GCC 11.2.0_3) 11.2.0) successfully compiled SAGAS.cpp.
 
 ## How to run
 
