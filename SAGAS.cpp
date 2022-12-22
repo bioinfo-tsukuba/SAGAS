@@ -6,6 +6,8 @@
 #include <set> // set
 #include <iterator>
 #include <random> 
+#include <vector> //vector
+#include <tuple> // tuple, make_tuple
 
 
 //時間取得
