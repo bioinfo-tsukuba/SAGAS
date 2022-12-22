@@ -36,8 +36,47 @@ We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(GCC 9.2.1, cl
     ```zsh
      $ ./SAGAS_compiled -log Sample "This is sample case" -conf ./sample/configs/Gu2016x1_sample.tsv
     ```
-3. Make setting files(dependency.tsv, machines.tsv, operations.tsv, tcmb.tsv) in a directory (see the sample files).//フォーマットを作ってあげるといいかも
-4. Make a config file (see the sample file).//フォーマットを作ってあげるといいかも
+5. Make setting files(dependency.tsv, machines.tsv, operations.tsv, tcmb.tsv) in a directory. Blank templates are in the "Blank templates" directory.
+    <details><summary>Detail explanation for making setting files</summary>
+    
+    1. machines.tsv
+        
+        The No.[Machine_ID] machine is a type [Machine_type] machine. It is called [Machine_name].
+        
+    1. operations.tsv
+    
+        The [Operation_ID]-th operation in the [Job_ID]-th job can be processed by the type [Compatible_machine] machine within [Processing_time](msec).
+        
+    1. dependency.tsv
+        
+        Let the [Operation_ID_1]-th operation in the [Job_ID]-th job be $O_a$.
+        Let the [Operation_ID_2]-th operation in the [Job_ID]-th job be $O_b$.
+        $O_a$ must finish before $O_b$ begins.
+        
+    1. tcmb.tsv (a little bit complex)
+    
+        Let the [Operation_ID_1]-th operation in the [Job_ID]-th job be $O_a$.
+        Let the [Operation_ID_2]-th operation in the [Job_ID]-th job be $O_b$.
+        
+        1. Pattern A ([Point_1] == Start && [Point_2] == Start)
+            
+            The absolute difference between the start time of operation $O_a$ and the start time of operation $O_b$ must be less than or equal to [Time_constraint].
+            
+        1. Pattern A ([Point_1] == End && [Point_2] == Start)
+        
+            The absolute difference between the end time of operation $O_a$ and the start time of operation $O_b$ must be less than or equal to [Time_constraint].
+                    
+        1. Pattern A ([Point_1] == Start && [Point_2] == End)
+        
+            The absolute difference between the start time of operation $O_a$ and the end time of operation $O_b$ must be less than or equal to [Time_constraint].
+                    
+        1. Pattern A ([Point_1] == End && [Point_2] == End)
+        
+            The absolute difference between the end time of operation $O_a$ and the end time of operation $O_b$ must be less than or equal to [Time_constraint].
+        
+    
+    </details>
+6. Make a config file (see the sample file).//フォーマットを作ってあげるといいかも
 
 
 ```zsh
