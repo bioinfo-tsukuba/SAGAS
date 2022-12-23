@@ -962,7 +962,7 @@ int main(int argc, char *argv[]){
       }
       else if(strcmp(argv[i], "-giko") == 0){
           Giko_comment("Giko mode!" );
-        command_line["-giko"]++;
+        command_line["-giko"] = "";
 
       }
                   i++;
