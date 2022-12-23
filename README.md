@@ -9,8 +9,7 @@ We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(g++ (Homebrew
 
 ### Google colaboratory (Easy, recommend)
 
-1. Access this [page](https://github.com/bioinfo-tsukuba/SAGAS/blob/main/SAGASforGithub.ipynb)
-2. Click this mark ![image](https://user-images.githubusercontent.com/85389241/197720096-68863e1b-a46d-4df3-98af-5ebf1a506812.png)
+1. Access this [page](https://colab.research.google.com/github/bioinfo-tsukuba/SAGAS/blob/main/SAGASforGithub.ipynb)
 3. Follow the instructions in the notebook.
 
 
