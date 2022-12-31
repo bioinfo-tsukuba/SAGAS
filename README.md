@@ -86,7 +86,7 @@ We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(g++ (Homebrew
     
     </details>
     
-6. Make a config file (you can use the interactive config maker).//フォーマットを作ってあげるといいかも
+6. Make a config file (you can use the interactive config maker).
 
 
 
