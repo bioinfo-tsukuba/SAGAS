@@ -46,6 +46,19 @@ int randxor()
   t=(x^(x<<11));x=y;y=z;z=w; return( (w=(w^(w>>19))^(t^(t>>8)))% NMAX);
 }
 
+void input_is_integer(string input_num){
+  for(int i = 0; i < (int)input_num.size(); i++){
+    if(input_num[i] == '.'){
+        cout << "Processing time \"" << input_num <<
+        "\" of " << "Ope" <<
+        " of " << "Job" <<
+        " is not integer!\nThe decimal point is suppressed.\n";
+        return ;
+    }
+  }
+  return ;
+}
+
 int schedule_limit= 10800000;
 
 
@@ -279,9 +292,12 @@ void input_Jobs(string filename, vector<int> &N, vector<vector<int>> &C, vector<
     if(isNumber(F)){
       int Job_ID = stoi(F);
       int Operation_ID, Compatible_machine, Processing_time;
+      string Processing_time_str;
       input_file >> Operation_ID;
       input_file >> Compatible_machine;
-      input_file >> Processing_time;    
+      input_file >> Processing_time_str;    
+      input_is_integer(Processing_time_str);
+      Processing_time = stoi(Processing_time_str);
       sum_of_operation ++ ;
       while(N.size()<Job_ID){
 
@@ -1051,7 +1067,6 @@ bool SA_naive = false;
   Source_directory = Conditions["Source_directory"];
   Output_directory = Conditions["Output_directory"];
   Output_directory += "/";
-  cout << Output_directory << endl;
 
 break;
 }
