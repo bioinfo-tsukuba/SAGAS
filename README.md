@@ -89,6 +89,27 @@ We confirmed that C++14(g++ Ubuntu 7.5.0-3ubuntu1~18.04) and C++17(g++ (Homebrew
 6. Make a config file (you can use the interactive config maker).
 
 
+## Output component
+
+1. test_dep*.tsv: All dependencies for visualisation.
+2. test_machines*.tsv: All machines for visualisation.
+3. test_time*.tsv: All schedules (each start time and each allocated machine).
+4. test_result*.tsv: Summary of each scheduling in an experiment includes the following:
+    1. Date of experiment
+    2. Experiment ID
+    3. Number of units per type of instrument installed
+    4. Number of units of each type of instrument actually used
+    5. Score (execution time)
+    6. The computation time of SA steps
+    7. The computation time of the entire schedule
+    8. The simulated-annealing step where the best schedule found
+    9. The total number of simulated-annealing steps
+    10. Evaluation of the output solution (Greedy-derived, SA-derived or failed)
+5. \*\_log.txt: Log includes the following:
+    1. All configurations for the simulation
+    2. (optional) User name
+    3. (optional) Comment
+    4. (optional) Comment date
 
 
 
