@@ -2422,7 +2422,7 @@ if(Strict_adjustment){
       ofstream ofs(fileName_time);
       if (!ofs)
       {
-        std::cout << "ファイルが開けませんでした。" << std::endl;
+        std::cout << "cannot open the file " << fileName_time << std::endl;
         std::cin.get();
         return 0;
       }
@@ -2439,7 +2439,7 @@ if(Strict_adjustment){
       }
       ofs.close();
 
-      std::cout << fileName_time << "に書き込みました。" << std::endl;
+      std::cout << "create " << fileName_time << std::endl;
 
       if(FAIL)
         fileName_dep = Output_directory + test_dep_ +to_string(best_score)+"_"+ to_string(ppp) +"_Loop" +to_string(Loop)+ "_FAILED" +tsvtxt;
@@ -2452,7 +2452,7 @@ if(Strict_adjustment){
       ofstream ofs2(fileName_dep);
       if (!ofs2)
       {
-        std::cout << "ファイルが開けませんでした。" << std::endl;
+        std::cout << "cannot open the file " << fileName_dep << std::endl;
         std::cin.get();
         return 0;
       }
@@ -2471,7 +2471,7 @@ if(Strict_adjustment){
 
       ofs2.close();
 
-      std::cout << fileName_dep << "に書き込みました。" << std::endl;
+      std::cout << "create " << fileName_dep << std::endl;
 
 
       if(FAIL)
@@ -2485,7 +2485,7 @@ if(Strict_adjustment){
       ofstream ofs3(fileName_mac);
       if (!ofs3)
       {
-        std::cout << "ファイルが開けませんでした。" << std::endl;
+        std::cout << "cannot open the file " << fileName_mac << std::endl;
         std::cin.get();
         return 0;
       }
@@ -2535,7 +2535,7 @@ if(Strict_adjustment){
 
 
       ofs3.close();
-      std::cout << fileName_mac << "に書き込みました。" << std::endl;
+      std::cout << "create " << fileName_mac  << std::endl;
 
 
 
@@ -2602,7 +2602,7 @@ Result_statas = "SA";
       writing_file.close();
 
 
-      std::cout << fileName_res << "に書き込みました。" << std::endl;
+      std::cout << "create " << fileName_res << std::endl;
 
       cout <<"______" << endl;
 
